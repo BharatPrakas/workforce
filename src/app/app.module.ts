@@ -9,6 +9,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { InfoModule } from './info/info.module';
 import { MaterialModule } from './material/material.module';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { TimesheetModule } from './timesheet/timesheet.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     AbsenceManagementModule,
     DashboardModule,
     InfoModule,
-    MaterialModule
+    MaterialModule,
+    TimesheetModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -17,7 +17,20 @@ const routes: Routes = [
   { path: '', redirectTo: '/app/dashboard', pathMatch: 'full' },
   {
     path: 'app', component: NavbarComponent, children: [
-      { path: 'dashboard', component: DashboardComponent }
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'timesheet', component: TimesheetComponent},
+      {path:'info',component:InfoComponent,children:[
+        {path:'general',component:GeneralComponent},
+        {path:'contact',component:ContactComponent},
+        {path:'education',component:EducationComponent},
+        {path:'skills',component:SkillsComponent},
+        {path:'my-jobs',component:MyJobsComponent},
+        {path:'employments',component:EmploymentsComponent},
+        {path:'confidential',component:LeaveComponent},
+        {path:'documents',component:DocumentsComponent}
+
+      ]}
+
     ]
   }
 ];

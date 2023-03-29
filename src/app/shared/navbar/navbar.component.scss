@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.navbar {
+    background-color: #121212;
+    color: white;
+}
+
+.sidenav-drawer a {
+    padding: 10 60px 10 20px;
+}
+
+.sidebar-container {
+    flex: 1;
+}
+
+::ng-deep .sidenav-drawer mat-icon {
+    position: relative;
+    top: 5px;
+    width: 30px !important;
+}

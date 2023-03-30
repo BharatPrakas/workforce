@@ -2,3 +2,19 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-mdc-form-field-infix {
+  min-height: 25px !important;
+}
+
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.mdc-text-field {
+  border-top-left-radius: var(--mdc-shape-small, 0px) !important;
+  border-top-right-radius: var(--mdc-shape-small, 0px) !important;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}

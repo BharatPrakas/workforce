@@ -12,8 +12,6 @@
         <div class="project-type">Internal Project</div>
       </div>
     </div>
-    <div class="announcement"></div>
-    <div class="new-hires"></div>
     <!-- NEW ANNOUNCEMEN -->
     <div class="main-content" fxFlex="70%" fxFlex.lt-md="100%">
       <div class="announcement border">
@@ -41,8 +39,36 @@
     <div fxFlex="100%">
       <div class="time-off border">
         <div class="tittle">Time Off</div>
-        <div class="content" fxLayoutAlign="space-between start">
-
+        <div class="content" fxLayout="column">
+          <div fxFlex="100%" fxLayout="row">
+            <!-- PERSONAL -->
+            <div class="personal" fxLayout="column" fxFlex="50%" fxLayoutAlign="center center">
+              <br>
+              <b>personal</b>
+              <div fxLayout="row" class="counts" fxLayoutGap="5px">
+                <div fxLayoutAlign="center center"><mat-icon>calendar_month</mat-icon></div>
+                <div class="count" fxLayoutAlign="center center">
+                  <h1>1.00</h1>
+                </div>
+              </div>
+              <h5>DAYS AVAILABLE</h5>
+              <br>
+            </div>
+            <!-- PERMISSION -->
+            <div class="permission border-left" fxLayout="column" fxFlex="50%" fxLayoutAlign="center center">
+              <br>
+              <b>Permission</b>
+              <div fxLayout="row" class="counts" fxLayoutGap="5px">
+                <div fxLayoutAlign="center center"><mat-icon>calendar_month</mat-icon></div>
+                <div class="count" fxLayoutAlign="center center">
+                  <h1>1.00</h1>
+                </div>
+              </div>
+              <h5>HOURS AVAILABLE</h5>
+              <br>
+            </div>
+          </div>
+          <button mat-raised-button>Request off time</button>
         </div>
       </div>
     </div>

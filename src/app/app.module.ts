@@ -10,6 +10,7 @@ import { InfoModule } from './info/info.module';
 import { MaterialModule } from './material/material.module';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { TimesheetModule } from './timesheet/timesheet.module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TimesheetModule } from './timesheet/timesheet.module';
     DashboardModule,
     InfoModule,
     MaterialModule,
-    TimesheetModule
+    TimesheetModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

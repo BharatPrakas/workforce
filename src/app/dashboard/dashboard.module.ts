@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -9,7 +10,8 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
     DashboardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule
   ]
 })
 export class DashboardModule { }

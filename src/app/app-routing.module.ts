@@ -19,11 +19,8 @@ const routes: Routes = [
   { path: '', redirectTo: '/app/dashboard', pathMatch: 'full' },
   {
     path: 'app', component: NavbarComponent, children: [
-<<<<<<< HEAD
-      { path: 'dashboard', component: DashboardComponent},
-      { path:'absence',component:AbsenceComponent}
-=======
       { path: 'dashboard', component: DashboardComponent },
+      { path: 'absence', component: AbsenceComponent },
       { path: 'timesheet', component: TimesheetComponent },
       { path: 'info', redirectTo: '/app/info/general', pathMatch: 'full' },
       {
@@ -37,11 +34,8 @@ const routes: Routes = [
           { path: 'confidential', component: ConfidentialComponent },
           { path: 'leaves', component: LeaveComponent },
           { path: 'documents', component: DocumentsComponent },
-
         ]
-      },
-
->>>>>>> 239dcee5797f52b0a033c31832d20bc954afe756
+      }
     ]
   }
 ];

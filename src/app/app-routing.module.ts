@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AbsenceComponent } from './absence-management/components/absence/absence.component';
 import { DashboardComponent } from './dashboard/component/dashboard/dashboard.component';
 import { ConfidentialComponent } from './info/componentsinfo/confidential/confidential.component';
 import { ContactComponent } from './info/componentsinfo/contact/contact.component';
@@ -18,6 +19,10 @@ const routes: Routes = [
   { path: '', redirectTo: '/app/dashboard', pathMatch: 'full' },
   {
     path: 'app', component: NavbarComponent, children: [
+<<<<<<< HEAD
+      { path: 'dashboard', component: DashboardComponent},
+      { path:'absence',component:AbsenceComponent}
+=======
       { path: 'dashboard', component: DashboardComponent },
       { path: 'timesheet', component: TimesheetComponent },
       { path: 'info', redirectTo: '/app/info/general', pathMatch: 'full' },
@@ -36,6 +41,7 @@ const routes: Routes = [
         ]
       },
 
+>>>>>>> 239dcee5797f52b0a033c31832d20bc954afe756
     ]
   }
 ];

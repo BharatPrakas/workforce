@@ -1,0 +1,19 @@
+.outer-container {
+  padding: 2% 2% 2% 2%;
+}
+
+.inner-container {
+  padding: 0% 0% 2% 0%;
+}
+
+.filter-icon {
+  font-size: 25px;
+  border-style: none;
+  margin-left: 10px;
+  background-color: white;
+  border: 1px solid #dadada;
+}
+
+.inner-container button {
+  min-width: 30px !important;
+}

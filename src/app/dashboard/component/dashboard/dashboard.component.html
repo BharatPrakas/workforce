@@ -1,1 +1,76 @@
-<p>welcome</p>
+<div class="container" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px">
+  <!------------ MAIN CONTENT ------------>
+  <!-- MYJOB -->
+  <div class="main-content" fxFlex="70%" fxLayout="column" fxLayoutGap="10px" fxFlex.lt-md="100%">
+    <div class="my-job border">
+      <div class="tittle">My Jobs</div>
+      <div class="content" fxLayoutAlign="space-between start">
+        <div>Intern-2023</div>
+        <div>Centizen
+          <p>Client Name</p>
+        </div>
+        <div class="project-type">Internal Project</div>
+      </div>
+    </div>
+    <!-- NEW ANNOUNCEMEN -->
+    <div class="main-content" fxFlex="70%" fxFlex.lt-md="100%">
+      <div class="announcement border">
+        <div class="tittle">New Announcement</div>
+        <div class="content" fxLayoutAlign="space-between start">
+          <p>No new Announcement posted yet</p>
+        </div>
+      </div>
+      <div class="announcement"></div>
+      <div class="new-hires"></div>
+    </div>
+    <!-- NEW HIRE -->
+    <div class="main-content" fxFlex="70%" fxFlex.lt-md="100%">
+      <div class="announcement border">
+        <div class="tittle">New Hire</div>
+        <div class="content" fxLayoutAlign="space-between start">
+          <p>No one will be joining the company for the next liitle while</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------ SIDE CONTENT ------------>
+  <div class="side-content" fxFlex="30%">
+    <!------ TIME OFF ------->
+    <div fxFlex="100%">
+      <div class="time-off border">
+        <div class="tittle">Time Off</div>
+        <div class="content" fxLayout="column">
+          <div fxFlex="100%" fxLayout="row">
+            <!-- PERSONAL -->
+            <div class="personal" fxLayout="column" fxFlex="50%" fxLayoutAlign="center center">
+              <br>
+              <b>personal</b>
+              <div fxLayout="row" class="counts" fxLayoutGap="5px">
+                <div fxLayoutAlign="center center"><mat-icon>calendar_month</mat-icon></div>
+                <div class="count" fxLayoutAlign="center center">
+                  <h1>12.00</h1>
+                </div>
+              </div>
+              <h5>DAYS AVAILABLE</h5>
+              <br>
+            </div>
+            <!-- PERMISSION -->
+            <div class="permission border-left" fxLayout="column" fxFlex="50%" fxLayoutAlign="center center">
+              <br>
+              <b>Permission</b>
+              <div fxLayout="row" class="counts" fxLayoutGap="5px">
+                <div fxLayoutAlign="center center"><mat-icon>calendar_month</mat-icon></div>
+                <div class="count" fxLayoutAlign="center center">
+                  <h1>1.00</h1>
+                </div>
+              </div>
+              <h5>HOURS AVAILABLE</h5>
+              <br>
+            </div>
+          </div>
+          <button mat-raised-button>Request off time</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

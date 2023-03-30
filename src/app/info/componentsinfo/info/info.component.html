@@ -1,0 +1,20 @@
+<div class="body">
+  <br>
+  <div class="title" fxLayout="row" fxLayoutGap="8px">
+    <h1>{{Name}}</h1>
+    <div fxLayoutAlign="none end"><span class="active">ACTIVE</span></div>
+  </div>
+
+  <div fxLayout="row Wrap" fxLayoutGap="7px" class="info-btn-div">
+    <a routerLink="general" mat-stroked-button class="info-btn">General</a>
+    <a routerLink="contact" mat-stroked-button class="info-btn">Contact</a>
+    <a routerLink="education" mat-stroked-button class="info-btn">Education</a>
+    <a routerLink="skills" mat-stroked-button class="info-btn">Skills</a>
+    <a routerLink="my-jobs" mat-stroked-button class="info-btn">My Jobs</a>
+    <a routerLink="employments" mat-stroked-button class="info-btn">Employments</a>
+    <a routerLink="confidential" mat-stroked-button class="info-btn">Confidential</a>
+    <a routerLink="leaves" mat-stroked-button class="info-btn">Leaves</a>
+    <a routerLink="documents" mat-stroked-button class="info-btn">Documents</a>
+  </div>
+</div>
+<router-outlet></router-outlet>

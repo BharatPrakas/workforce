@@ -1,0 +1,180 @@
+<div class="body">
+  <div class="container" fxLayout="column">
+    <!-- 1 -->
+    <form fxLayout="column" [formGroup]="generalinfo">
+      <div class="row" fxLayout="row" fxFlex="100%" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout="row">
+          <div fxFlex="40%"><mat-label>Employee Code</mat-label></div>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput placeholder="EmployeeCode" formControlName="EmployeeCode">
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">First Name</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput placeholder="FirstName" formControlName="Firstname">
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="row" fxLayout="row" fxFlex="100%" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout="row">
+          <div fxFlex="40%"><mat-label>Middle Name</mat-label></div>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput formControlName="MiddleName">
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Last Name</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput placeholder="LastName" formControlName="LastName">
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="row" fxLayout="row" fxFlex="100%" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout="row">
+          <div fxFlex="40%"><mat-label>Email</mat-label></div>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput placeholder="Email" formControlName="Email">
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Alternate Email</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput placeholder="AlternateEmail" formControlName="AlternateEmail">
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="row" fxLayout="row" fxFlex="100%" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout="row">
+          <div fxFlex="40%"><mat-label>Gender</mat-label></div>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <mat-select formControlName="Gender">
+              <mat-option [value]="item.value" *ngFor="let item of db.Gender">{{item.value}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Marital Status</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <mat-select formControlName="MaritalStatus">
+              <mat-option [value]="item.value" *ngFor="let item of db.MaritalStatus">{{item.value}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="row" fxLayout="row" fxFlex="100%" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout="row">
+          <div fxFlex="40%"><mat-label>Department</mat-label></div>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <mat-select formControlName="Department">
+              <mat-option *ngFor="let data of db.Department" [value]="data.value">
+                {{data.value}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Designation</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <mat-select placeholder="Designation" formControlName="Designation">
+              <mat-option [value]="item.arul" *ngFor="let item of db.Designation">{{item.arul}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="row" fxLayout="row" fxFlex="100%" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout="row">
+          <div fxFlex="40%"><mat-label>Date of Birth</mat-label></div>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput [matDatepicker]="picker" placeholder="89" formControlName="DateOfBirth" [max]="todayDate">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Date of Joining</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput [matDatepicker]="picker1" placeholder="01/01/2023" formControlName="DateOfJoining">
+            <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="row" fxLayout="row" fxFlex="100%" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout="row">
+          <div fxFlex="40%"><mat-label>Employment Type</mat-label></div>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput placeholder="EmploymentType">
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Employee Category</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput placeholder="EmployeeCategory">
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- 8 -->
+      <div class="row" fxLayout="row" fxFlex="100%" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout="row">
+          <div fxFlex="40%"><mat-label>Role</mat-label></div>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput placeholder="Role">
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Reporting Manager</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput placeholder="RepotingManager">
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- 9 -->
+      <div class="row" fxLayout="row" fxFlex="100%" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout="row">
+          <div fxFlex="40%"><mat-label>Office Location</mat-label></div>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput placeholder="OfficeLocation">
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Holiday Calendar</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput placeholder="HolydayCalender">
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- 10 -->
+      <div class="row" fxLayout="row" fxFlex="100%" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout="row">
+          <div fxFlex="40%"><mat-label>Ethinicity</mat-label></div>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput placeholder="Ethinicity">
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Veteran</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput placeholder="No">
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- 11 -->
+      <div class="row" fxLayout="row" fxFlex="100%" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout="row">
+          <div fxFlex="40%"><mat-label>Notice Period</mat-label></div>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput placeholder="30">
+          </mat-form-field>
+        </div>
+      </div>
+      <div fxLayoutAlign="center center"><button mat-raised-button class="update-btn">Update</button></div>
+    </form>
+  </div>
+</div>

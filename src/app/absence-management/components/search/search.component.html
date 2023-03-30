@@ -1,0 +1,43 @@
+<div class="search-container" fxLayout="row wrap" fxLayoutAlign="space-around">
+  <div class="overall-content" fxLayout="column">
+    <mat-label>Leave Type</mat-label>
+    <mat-form-field appearance="outline">
+      <mat-select>
+        <mat-option value="1">Permission</mat-option>
+        <mat-option value="2">Personel</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="overall-content" fxLayout="column">
+    <mat-label>Status</mat-label>
+    <mat-form-field appearance="outline">
+      <mat-select>
+        <mat-option value="1">Draft</mat-option>
+        <mat-option value="2">Submitted</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div fxLayout="column" class="overall-content">
+    <mat-label>Start Date</mat-label>
+    <mat-form-field appearance="outline">
+      <input matInput [matDatepicker]="picker">
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <div fxLayout="column" class="overall-content">
+    <mat-label>End Date</mat-label>
+    <mat-form-field appearance="outline">
+      <input matInput [matDatepicker]="pick">
+      <mat-datepicker-toggle matIconSuffix [for]="pick"></mat-datepicker-toggle>
+      <mat-datepicker #pick></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <div  fxLayoutAlign="center center"><button class="apply-btn" mat-raised-button>Apply</button></div>
+  <div  fxLayoutAlign="center center"><button class="result-btn" mat-stroked-button>Reset</button></div>
+
+</div><br><br>

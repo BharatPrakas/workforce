@@ -1,0 +1,35 @@
+<div class="outer-container">
+  <div fxLayout="row" class="inner-container">
+    <mat-form-field appearance="outline">
+      <input matInput placeholder="Leave Type">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+    <div fxLayoutAlign="center center"><button class="filter-icon" mat-button><i class="bi bi-filter"></i></button></div>
+  </div>
+  <div class="mat-elevation-z8">
+    <table mat-table matSort [dataSource]="dataSource">
+
+      <ng-container matColumnDef="leavetype">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Leave Type</th>
+        <td mat-cell *matCellDef="let element"> {{element.leavetype}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="totalused">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Total Used </th>
+        <td mat-cell *matCellDef="let element"> {{element.totalused}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="totalbalance">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Total Balance </th>
+        <td mat-cell *matCellDef="let element"> {{element.totalbalance}} </td>
+      </ng-container>
+
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator showFirstLastButtons [length]="100" [pageSize]="10" [pageSizeOptions]="[10, 20,30]"
+      aria-label="Select page">
+    </mat-paginator>
+  </div>
+</div>

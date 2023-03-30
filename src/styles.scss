@@ -1,7 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-mdc-tab-labels {
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+// .mat-mdc-form-field-subscript-wrapper {
+//   display: none;
+// }
+
+
 
 .mat-mdc-form-field-infix {
   min-height: 25px !important;
@@ -10,11 +32,4 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
   padding-top: 8px;
   padding-bottom: 8px;
-}
-
-.mdc-text-field {
-  border-top-left-radius: var(--mdc-shape-small, 0px) !important;
-  border-top-right-radius: var(--mdc-shape-small, 0px) !important;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
 }

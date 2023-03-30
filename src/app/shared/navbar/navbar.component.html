@@ -6,12 +6,13 @@
     <span>Workforce</span>
   </mat-toolbar>
   <mat-drawer-container class="sidebar-container">
-    <mat-drawer class="sidenav-drawer" #drawer [mode]="isSmallDevice ? 'over' : 'side'">
+    <mat-drawer class="sidenav-drawer" #drawer [mode]="isSmallDevice ? 'over' : 'side'"
+      [opened]="isSmallDevice?false:true">
       <mat-nav-list>
         <a routerLink="/app/dashboard" mat-list-item><mat-icon>dashboard</mat-icon>Dashboard</a>
         <a routerLink="/app/info" mat-list-item><mat-icon>person</mat-icon>My Info</a>
         <a routerLink="/app/timesheet" mat-list-item><mat-icon>schedule</mat-icon>Time Sheet</a>
-        <a routerLink="/app" mat-list-item><mat-icon>exit_to_app</mat-icon>Absence Management</a>
+        <a routerLink="/app/absence" mat-list-item><mat-icon>exit_to_app</mat-icon>Absence Management</a>
       </mat-nav-list>
     </mat-drawer>
     <mat-drawer-content class="content">
@@ -19,4 +20,3 @@
     </mat-drawer-content>
   </mat-drawer-container>
 </div>
-

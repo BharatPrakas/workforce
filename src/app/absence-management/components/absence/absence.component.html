@@ -1,0 +1,14 @@
+<div class="title-container">
+  <div fxLayout="row" fxLayoutAlign="space-between">
+    <div class="title-header">Absence Management</div>
+    <a routerLink="/app/absence/application"><button class="plus">+</button></a>
+  </div><br>
+  <div class="sub-container">
+    <mat-tab-group class="scroll-bar" mat-stretch-tabs="false" mat-align-tabs="start" animationDuration="0ms">
+      <mat-tab label="My Leaves"><app-leave></app-leave></mat-tab>
+      <mat-tab label="Worklist"><app-worklist></app-worklist></mat-tab>
+      <mat-tab label="My Available Leaves"><app-available></app-available></mat-tab>
+    </mat-tab-group>
+
+  </div>
+</div>

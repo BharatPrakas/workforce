@@ -1,6 +1,12 @@
-.body{
+.body {
   padding: 15px;
 }
+
 .mat-tab-group {
   margin-bottom: 48px;
+}
+
+::ng-deep .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+.mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+  color: #070707;
 }

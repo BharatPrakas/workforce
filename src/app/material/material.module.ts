@@ -38,6 +38,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [],
@@ -81,7 +82,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatTreeModule,
     FlexLayoutModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatNativeDateModule
   ],
   exports: [
     MatButtonModule,
@@ -122,7 +124,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatTreeModule,
     FlexLayoutModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatNativeDateModule
   ]
 })
 export class MaterialModule { }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { MediaObserver } from '@angular/flex-layout';
 import { Subscription } from 'rxjs';
 
@@ -8,6 +8,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  @ViewChild('drawer', { static: true }) drawer!: TemplateRef<any>
   private mediaSubscription !: Subscription;
   isSmallDevice = false;
   toggler = true;
@@ -24,4 +25,5 @@ export class NavbarComponent implements OnInit {
       });
     });
   }
+
 }

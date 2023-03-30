@@ -1,3 +1,13 @@
+.border {
+    border: 1px solid rgb(209, 205, 205);
+}
+
+.border-left {
+    border-left: 1px solid rgb(209, 205, 205);
+}
+
+
+// ---------------------
 .container {
     padding: 10px 15px;
 }
@@ -31,10 +41,6 @@
     border-radius: 5px;
 }
 
-.border {
-    border: 1px solid rgb(209, 205, 205);
-}
-
 // ---------- ANNOUCEMENT ----------
 .main-content .announcement .tittle {
     padding: 10px;
@@ -52,6 +58,8 @@
     color: grey;
 }
 
+// ----------SIDE CONTENT ----------
+
 .side-content .time-off .tittle {
     padding: 10px;
     background: #ebebeb;
@@ -59,6 +67,79 @@
 }
 
 .side-content .time-off .content {
-    padding: 30px 15px;
-    font-size: 17px;
+    padding: 10px;
+}
+
+.time-off .content {
+    padding: 10px;
+}
+
+.time-off b {
+    margin-bottom: 10px;
+}
+
+.time-off h5 {
+    margin-top: 7px !important;
+}
+
+.side-content .personal {
+    margin: 0;
+    padding: 0;
+}
+
+.side-content .personal h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.side-content .personal h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.side-content .counts {
+    margin-bottom: 0 !important;
+}
+
+::ng-deep .side-content .personal mat-icon {
+    font-size: 35px;
+    height: 35px;
+    width: 35px;
+}
+
+// -----PERMISSION-----
+.side-content .permission {
+    margin: 0;
+    padding: 0;
+}
+
+.side-content .permission h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.side-content .permission h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.side-content .counts {
+    margin-bottom: 0 !important;
+}
+
+.side-content .time-off button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+::ng-deep .side-content .permission mat-icon {
+    font-size: 35px;
+    height: 35px;
+    width: 35px;
 }

@@ -22,44 +22,45 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-<<<<<<< HEAD .mat-mdc-tab-labels {
+.mat-mdc-tab-labels {
   border-bottom: 1px solid rgb(218, 218, 218);
 }
 
 .mat-mdc-form-field-subscript-wrapper {
   display: none;
+}
 
-  =======body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-  }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-  .mat-mdc-form-field-infix {
-    min-height: 25px !important;
-  }
+.mat-mdc-form-field-infix {
+  min-height: 25px !important;
+}
 
-  .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 
-  .mdc-text-field {
-    border-top-left-radius: var(--mdc-shape-small, 0px) !important;
-    border-top-right-radius: var(--mdc-shape-small, 0px) !important;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    >>>>>>>239dcee5797f52b0a033c31832d20bc954afe756
-  }
+.mdc-text-field {
+  border-top-left-radius: var(--mdc-shape-small, 0px) !important;
+  border-top-right-radius: var(--mdc-shape-small, 0px) !important;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 
-  //----- INPUT BORDER REDIUS -----
-  .mat-mdc-form-field {
-    --mdc-shape-small: 0 !important;
-  }
+}
 
-  .mat-mdc-select-arrow svg {
-    left: -50% !important;
-  }
+//----- INPUT BORDER REDIUS -----
+.mat-mdc-form-field {
+  --mdc-shape-small: 0 !important;
+}
 
-  .content .mdc-icon-button {
-    right: -7px !important;
-  }
+.mat-mdc-select-arrow svg {
+  left: -50% !important;
+}
+
+.content .mdc-icon-button {
+  right: -7px !important;
+}

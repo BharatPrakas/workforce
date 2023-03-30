@@ -12,6 +12,7 @@ import { LeaveComponent } from './componentsinfo/leave/leave.component';
 import { DocumentsComponent } from './componentsinfo/documents/documents.component';
 import { MaterialModule } from '../material/material.module';
 import { RouterModule } from '@angular/router';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 
@@ -31,9 +32,10 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     MaterialModule,
-    RouterModule
+    RouterModule,
+    MatNativeDateModule
   ],
-  exports:[
+  exports: [
     InfoComponent,
     GeneralComponent,
     ContactComponent,

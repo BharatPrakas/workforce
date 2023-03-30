@@ -1,9 +1,10 @@
+<!-- ------------Search Bar--------- -->
 <mat-form-field  appearance="outline" >
   <input matInput (keyup)="applyFilter($event)" placeholder="Search" #input>
   <mat-icon matSuffix>search</mat-icon>
 </mat-form-field>
-<table mat-table [dataSource]="dataSource" matSort>
-
+<!-- --------------Table------------ -->
+<table mat-table [dataSource]="dataSource" matSort><!-- ------------Paginator--------- -->
   <ng-container matColumnDef="StartDate">
     <th mat-header-cell *matHeaderCellDef mat-sort-header>StartDate</th>
     <td mat-cell *matCellDef="let element"> {{element.StartDate}} </td>

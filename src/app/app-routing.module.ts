@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/component/dashboard/dashboard.component';
+import { ConfidentialComponent } from './info/componentsinfo/confidential/confidential.component';
 import { ContactComponent } from './info/componentsinfo/contact/contact.component';
 import { DocumentsComponent } from './info/componentsinfo/documents/documents.component';
 import { EducationComponent } from './info/componentsinfo/education/education.component';
@@ -18,19 +19,20 @@ const routes: Routes = [
   {
     path: 'app', component: NavbarComponent, children: [
       { path: 'dashboard', component: DashboardComponent },
-      { path: 'timesheet', component: TimesheetComponent },
-      {
-        path: 'info', component: InfoComponent, children: [
-          { path: 'general', component: GeneralComponent },
-          { path: 'contact', component: ContactComponent },
-          { path: 'education', component: EducationComponent },
-          { path: 'skills', component: SkillsComponent },
-          { path: 'my-jobs', component: MyJobsComponent },
-          { path: 'employments', component: EmploymentsComponent },
-          { path: 'confidential', component: LeaveComponent },
-          { path: 'documents', component: DocumentsComponent }
-        ]
-      }
+      { path: 'timesheet', component: TimesheetComponent},
+      {path:'info',component:InfoComponent,children:[
+        {path:'general',component:GeneralComponent},
+        {path:'contact',component:ContactComponent},
+        {path:'education',component:EducationComponent},
+        {path:'skills',component:SkillsComponent},
+        {path:'my-jobs',component:MyJobsComponent},
+        {path:'employments',component:EmploymentsComponent},
+        {path:'confidential',component:ConfidentialComponent},
+        {path:'leaves',component:LeaveComponent},
+        {path:'documents',component:DocumentsComponent},
+
+      ]},
+
     ]
   }
 ];

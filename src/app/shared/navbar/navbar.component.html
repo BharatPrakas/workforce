@@ -1,5 +1,4 @@
 <div class="container">
-
   <mat-toolbar class="navbar" fxFlexLayout="row" fxLayoutAlign.gt-md="space-between center">
     <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon>
@@ -7,7 +6,8 @@
     <span>Workforce</span>
   </mat-toolbar>
   <mat-drawer-container class="sidebar-container">
-    <mat-drawer class="sidenav-drawer" #drawer [mode]="isSmallDevice ? 'over' : 'side'">
+    <mat-drawer class="sidenav-drawer" #drawer [mode]="isSmallDevice ? 'over' : 'side'"
+      [opened]="isSmallDevice?false:true">
       <mat-nav-list>
         <a routerLink="/app/dashboard" mat-list-item><mat-icon>dashboard</mat-icon>Dashboard</a>
         <a routerLink="/app/info" mat-list-item><mat-icon>person</mat-icon>My Info</a>
@@ -20,4 +20,3 @@
     </mat-drawer-content>
   </mat-drawer-container>
 </div>
-

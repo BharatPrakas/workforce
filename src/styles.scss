@@ -1,7 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+//font
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 .mat-mdc-form-field-infix {
   min-height: 25px !important;
@@ -17,4 +31,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   border-top-right-radius: var(--mdc-shape-small, 0px) !important;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+//----- INPUT BORDER REDIUS -----
+.mat-mdc-form-field {
+  --mdc-shape-small: 0 !important;
+}
+
+.mat-mdc-select-arrow svg {
+  left: -50% !important;
+}
+
+.content .mdc-icon-button {
+  right: -7px !important;
 }

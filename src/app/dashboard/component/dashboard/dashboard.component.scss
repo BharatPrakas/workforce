@@ -14,8 +14,9 @@
 
 .main-content .my-job .tittle {
     padding: 10px;
-    background: #ebebeb;
+    background-image: linear-gradient(to right, #deafe2, #58255c);
     font-size: 17px;
+    // #a72a87
 }
 
 .main-content .my-job .content {
@@ -44,7 +45,8 @@
 // ---------- ANNOUCEMENT ----------
 .main-content .announcement .tittle {
     padding: 10px;
-    background: #ebebeb;
+    // background: #deafe2;
+    background-image: linear-gradient(to right, #deafe2, #58255c);
     font-size: 17px;
 }
 
@@ -62,7 +64,7 @@
 
 .side-content .time-off .tittle {
     padding: 10px;
-    background: #ebebeb;
+    background-image: linear-gradient(to right, #deafe2, #58255c);
     font-size: 17px;
 }
 
@@ -92,11 +94,17 @@
     padding: 0;
     font-weight: 800;
     font-size: 35px;
+    color: #4B0150;
+}
+
+.side-content .personal mat-icon {
+    color: #4B0150;
 }
 
 .side-content .personal h5 {
     margin: 0;
     padding: 0;
+    color: #4B0150;
 }
 
 .side-content .counts {
@@ -120,11 +128,17 @@
     padding: 0;
     font-weight: 800;
     font-size: 35px;
+    color: #4B0150;
+}
+
+.side-content .permission mat-icon {
+    color: #4B0150;
 }
 
 .side-content .permission h5 {
     margin: 0;
     padding: 0;
+    color: #4B0150;
 }
 
 .side-content .counts {
@@ -133,7 +147,7 @@
 
 .side-content .time-off button {
     width: 100%;
-    background-color: black;
+    background-color: #4B0150;
     color: white;
     margin-top: 20px;
 }

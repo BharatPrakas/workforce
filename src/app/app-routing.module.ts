@@ -17,12 +17,8 @@ import { TimesheetComponent } from './timesheet/component/timesheet/timesheet.co
 
 const routes: Routes = [
   { path: '', redirectTo: '/app/dashboard', pathMatch: 'full' },
-  {
-    path: 'app', component: NavbarComponent, children: [
-<<<<<<< HEAD
-      { path: 'dashboard', component: DashboardComponent},
-      { path:'absence',component:AbsenceComponent}
-=======
+  {path: 'app', component: NavbarComponent, children: [
+      { path:'absence',component:AbsenceComponent},
       { path: 'dashboard', component: DashboardComponent },
       { path: 'timesheet', component: TimesheetComponent},
       {path:'info',component:InfoComponent,children:[
@@ -38,7 +34,6 @@ const routes: Routes = [
 
       ]},
 
->>>>>>> 239dcee5797f52b0a033c31832d20bc954afe756
     ]
   }
 ];

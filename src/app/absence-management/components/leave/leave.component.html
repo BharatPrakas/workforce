@@ -4,11 +4,9 @@
       <input matInput placeholder="Leave Type" (keyup)="applyFilter($event)">
       <mat-icon matSuffix>search</mat-icon>
     </mat-form-field>
-    <div fxLayoutAlign="center center"><button class="filter-icon" (click)="opensearch()" mat-button><i
-          class="bi bi-filter"></i></button></div>
   </div>
   <app-search *ngIf="search"></app-search>
-  <div class="mat-elevation-z8">
+  <div class="mat-elevation-z2">
     <table mat-table matSort [dataSource]="dataSource">
 
       <ng-container matColumnDef="leavetype">

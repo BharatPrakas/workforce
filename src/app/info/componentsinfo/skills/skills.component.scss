@@ -1,0 +1,28 @@
+.container {
+  margin: 20px !important;
+  padding: 20px;
+  border: 1px solid rgb(221, 215, 215);
+}
+.table {
+  margin-block: 20px;
+  border: 1px solid rgb(231, 222, 222);
+}
+
+::ng-deep.mdc-data-table__header-cell {
+  font-size: 13px;
+  font-weight: 300 !important;
+  color: rgb(172, 162, 162);
+
+}
+.norecord-div {
+  border: 1px solid rgb(247, 240, 240);
+  padding: 40px;
+  font-size: 30px;
+  font-weight: 300;
+  color: rgb(172, 162, 162);
+  box-shadow: none !important;
+}
+// pagenator class
+.pagenator-cls {
+  color: rgb(161, 154, 154) !important;
+}

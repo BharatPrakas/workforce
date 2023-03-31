@@ -13,6 +13,9 @@ import { DocumentsComponent } from './componentsinfo/documents/documents.compone
 import { MaterialModule } from '../material/material.module';
 import { RouterModule } from '@angular/router';
 import { MatNativeDateModule } from '@angular/material/core';
+import { PresentaddressComponent } from './componentsinfo/contact/address/presentaddress/presentaddress.component';
+import { PermentaddressComponent } from './componentsinfo/contact/address/permentaddress/permentaddress.component';
+import { EmergencycontactComponent } from './componentsinfo/contact/address/emergencycontact/emergencycontact.component';
 
 
 
@@ -27,7 +30,10 @@ import { MatNativeDateModule } from '@angular/material/core';
     EmploymentsComponent,
     ConfidentialComponent,
     LeaveComponent,
-    DocumentsComponent
+    DocumentsComponent,
+    PresentaddressComponent,
+    PermentaddressComponent,
+    EmergencycontactComponent
   ],
   imports: [
     CommonModule,

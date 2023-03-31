@@ -110,13 +110,17 @@
         <div class="child1" fxFlex="50%" fxLayout="row">
           <div fxFlex="40%"><mat-label>Employment Type</mat-label></div>
           <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
-            <input matInput placeholder="EmploymentType">
+            <mat-select formControlName="EmploymentType">
+              <mat-option [value]="item.value" *ngFor="let item of db.EmploymentType">{{item.value}}</mat-option>
+            </mat-select>
           </mat-form-field>
         </div>
         <div class="child2" fxLayout="row" fxFlex="50%">
           <mat-label fxFlex="40%">Employee Category</mat-label>
           <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
-            <input matInput placeholder="EmployeeCategory">
+            <mat-select formControlName="EmployeeCategory">
+              <mat-option [value]="item.value" *ngFor="let item of db.EmployeeCategory">{{item.value}}</mat-option>
+            </mat-select>
           </mat-form-field>
         </div>
       </div>
@@ -125,7 +129,9 @@
         <div class="child1" fxFlex="50%" fxLayout="row">
           <div fxFlex="40%"><mat-label>Role</mat-label></div>
           <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
-            <input matInput placeholder="Role">
+            <mat-select formControlName="Role">
+              <mat-option [value]="item.value" *ngFor="let item ">{{item.value}}</mat-option>
+            </mat-select>
           </mat-form-field>
         </div>
         <div class="child2" fxLayout="row" fxFlex="50%">

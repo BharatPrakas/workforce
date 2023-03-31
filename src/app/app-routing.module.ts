@@ -17,23 +17,25 @@ import { TimesheetComponent } from './timesheet/component/timesheet/timesheet.co
 
 const routes: Routes = [
   { path: '', redirectTo: '/app/dashboard', pathMatch: 'full' },
-  {path: 'app', component: NavbarComponent, children: [
-      { path:'absence',component:AbsenceComponent},
+  {
+    path: 'app', component: NavbarComponent, children: [
       { path: 'dashboard', component: DashboardComponent },
-      { path: 'timesheet', component: TimesheetComponent},
-      {path:'info',component:InfoComponent,children:[
-        {path:'general',component:GeneralComponent},
-        {path:'contact',component:ContactComponent},
-        {path:'education',component:EducationComponent},
-        {path:'skills',component:SkillsComponent},
-        {path:'my-jobs',component:MyJobsComponent},
-        {path:'employments',component:EmploymentsComponent},
-        {path:'confidential',component:ConfidentialComponent},
-        {path:'leaves',component:LeaveComponent},
-        {path:'documents',component:DocumentsComponent},
-
-      ]},
-
+      { path: 'absence', component: AbsenceComponent },
+      { path: 'timesheet', component: TimesheetComponent },
+      { path: 'info', redirectTo: '/app/info/general', pathMatch: 'full' },
+      {
+        path: 'info', component: InfoComponent, children: [
+          { path: 'general', component: GeneralComponent },
+          { path: 'contact', component: ContactComponent },
+          { path: 'education', component: EducationComponent },
+          { path: 'skills', component: SkillsComponent },
+          { path: 'my-jobs', component: MyJobsComponent },
+          { path: 'employments', component: EmploymentsComponent },
+          { path: 'confidential', component: ConfidentialComponent },
+          { path: 'leaves', component: LeaveComponent },
+          { path: 'documents', component: DocumentsComponent },
+        ]
+      }
     ]
   }
 ];

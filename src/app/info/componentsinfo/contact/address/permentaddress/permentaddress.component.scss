@@ -1,0 +1,35 @@
+.container {
+  margin: 20px;
+  border: 1px solid rgb(221, 215, 215);
+  padding: 20px;
+}
+.checkbox{
+  // padding-bottom: 5px;
+  padding-left: 0 !important;
+}
+
+::ng-deep .mat-mdc-form-field-flex {
+  height: 32px !important;
+  font-size: 13px !important;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding-left: 0px !important;
+}
+
+//----- INPUT SELECT -----
+::ng-deep .mat-mdc-select {
+  font-size: 13px !important;
+}
+
+//----- INPUT SELECT OPTION -----
+::ng-deep .mat-mdc-option {
+  font-size: 13px !important;
+}
+
+//forms padding in general info
+::ng-deep .mdc-text-field--outlined {
+  padding-left: max(5px, calc(var(--mdc-shape-small, 4px) + 4px)) !important;
+}

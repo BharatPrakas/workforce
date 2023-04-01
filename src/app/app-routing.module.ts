@@ -22,7 +22,9 @@ const routes: Routes = [
 
       { path: 'dashboard', component: DashboardComponent },
       { path: 'absence', component: AbsenceComponent },
+
       { path: 'dashboard', component: DashboardComponent },
+      { path: 'absence', component: AbsenceComponent },
       { path: 'timesheet', component: TimesheetComponent },
       { path: 'info', redirectTo: '/app/info/general', pathMatch: 'full' },
       {   path: 'info', component: InfoComponent, children: [
@@ -35,11 +37,12 @@ const routes: Routes = [
           { path: 'confidential', component: ConfidentialComponent },
           { path: 'leaves', component: LeaveComponent },
           { path: 'documents', component: DocumentsComponent },
-
         ]
       }
     ]}
-];
+
+    ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

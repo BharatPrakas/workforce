@@ -1,145 +1,161 @@
 .border {
-    border: 1px solid rgb(209, 205, 205);
+  border: 1px solid rgb(209, 205, 205);
 }
 
 .border-left {
-    border-left: 1px solid rgb(209, 205, 205);
+  border-left: 1px solid rgb(209, 205, 205);
 }
 
 
 // ---------------------
 .container {
-    padding: 10px 15px;
+  padding: 10px 15px;
 }
 
 .main-content .my-job .tittle {
-    padding: 10px;
-    background: #ebebeb;
-    font-size: 17px;
+  padding: 10px;
+  // background-image: linear-gradient(to right, #deafe2, #58255c);
+  background-color: #deafe2;
+  font-size: 17px;
+  // #a72a87
 }
 
 .main-content .my-job .content {
-    padding: 15px 15px 0px 10px;
-    font-size: 17px;
-    // margin-right: 40px;
+  padding: 15px 15px 0px 10px;
+  font-size: 17px;
+  // margin-right: 40px;
 }
 
 .main-content .my-job .content {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 .main-content .my-job .content p {
-    font-size: 12px;
-    color: grey;
+  font-size: 12px;
+  color: grey;
 }
 
 .main-content .my-job .content .project-type {
-    padding: 7px 10px;
-    font-size: 12px;
-    background-color: rgb(249, 231, 159);
-    color: rgb(175, 141, 5);
-    border-radius: 5px;
+  padding: 7px 10px;
+  font-size: 12px;
+  background-color: rgb(249, 231, 159);
+  color: rgb(175, 141, 5);
+  border-radius: 5px;
 }
 
 // ---------- ANNOUCEMENT ----------
 .main-content .announcement .tittle {
-    padding: 10px;
-    background: #ebebeb;
-    font-size: 17px;
+  padding: 10px;
+  background-color: #deafe2;
+  // background-image: linear-gradient(to right, #deafe2, #58255c);
+  font-size: 17px;
 }
 
 .main-content .announcement .content {
-    padding: 30px 15px;
-    font-size: 17px;
+  padding: 30px 15px;
+  font-size: 17px;
 }
 
 .announcement .content p {
-    font-size: 15px;
-    color: grey;
+  font-size: 15px;
+  color: grey;
 }
 
 // ----------SIDE CONTENT ----------
 
 .side-content .time-off .tittle {
-    padding: 10px;
-    background: #ebebeb;
-    font-size: 17px;
+  padding: 10px;
+  // background-image: linear-gradient(to right, #deafe2, #58255c);
+  background-color: #deafe2;
+  font-size: 17px;
 }
 
 .side-content .time-off .content {
-    padding: 10px;
+  padding: 10px;
 }
 
 .time-off .content {
-    padding: 10px;
+  padding: 10px;
 }
 
 .time-off b {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .time-off h5 {
-    margin-top: 7px !important;
+  margin-top: 7px !important;
 }
 
 .side-content .personal {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .side-content .personal h1 {
-    margin: 0;
-    padding: 0;
-    font-weight: 800;
-    font-size: 35px;
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+  font-size: 35px;
+  color: #4B0150;
+}
+
+.side-content .personal mat-icon {
+  color: #4B0150;
 }
 
 .side-content .personal h5 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  color: #4B0150;
 }
 
 .side-content .counts {
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 ::ng-deep .side-content .personal mat-icon {
-    font-size: 35px;
-    height: 35px;
-    width: 35px;
+  font-size: 35px;
+  height: 35px;
+  width: 35px;
 }
 
 // -----PERMISSION-----
 .side-content .permission {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .side-content .permission h1 {
-    margin: 0;
-    padding: 0;
-    font-weight: 800;
-    font-size: 35px;
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+  font-size: 35px;
+  color: #4B0150;
+}
+
+.side-content .permission mat-icon {
+  color: #4B0150;
 }
 
 .side-content .permission h5 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  color: #4B0150;
 }
 
 .side-content .counts {
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .side-content .time-off button {
-    width: 100%;
-    background-color: black;
-    color: white;
-    margin-top: 20px;
+  width: 100%;
+  background-color: #4B0150;
+  color: white;
+  margin-top: 20px;
 }
 
 ::ng-deep .side-content .permission mat-icon {
-    font-size: 35px;
-    height: 35px;
-    width: 35px;
+  font-size: 35px;
+  height: 35px;
+  width: 35px;
 }

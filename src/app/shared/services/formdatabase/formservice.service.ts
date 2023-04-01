@@ -10,7 +10,7 @@ export class FormserviceService {
     EmployeeCode: 306,
     Firstname: 'Bharathvaj',
     MiddleName: '',
-    LastName: 'P',
+    LastName: 'Prakash',
     Email: 'bharathvaj1312@gmail.com',
     AlternateEmail: 'bharathvaj@gmail.com',
     Gender: 'Male',
@@ -34,6 +34,12 @@ export class FormserviceService {
   Department = [{ sno: 1, value: 'Developement' }, { sno: 2, value: 'FrontEnd' }, { sno: 3, value: 'BackEnd' }];
   Designation = [{ sno: 1, arul: 'Software Engineer' }, { sno: 2, arul:'SeniorSoftware Engineer'}, { sno: 3, arul:'Project Manager'}];
   EmploymentType = [{ sno: 1, value: 'Internal Employee' }, { sno: 2, value: 'External Employee' }, { sno: 3, value: 'Contract Employee' }];
-  EmployeeCategory = [{ sno: 1, value: 'Centizen' }, { sno: 2, value: 'centizen-Partner' }, { sno: 3, value: 'BackEnd' }];
-
+  EmployeeCategory = [{ sno: 1, value: 'Centizen' }, { sno: 2, value: 'centizen-Partner' }];
+  Role = [{ sno: 1, value: 'Employee' }];
+  ReportingManager=[{ sno: 1, value: 'Boopathi Raja K' }, { sno: 2, value: 'Andrew Rayan' }];
+  OfficeLocation = [{ sno: 1, value: 'Tirunelveli' }, { sno: 2, value: 'Chennai' }, { sno: 3, value: 'Washington DC' }];
+  HolidayCalender = [{ sno: 1, value: 'Centizen-TN' }, { sno: 2, value: 'Centizen-US' }];
+  Ethinicity = [{ sno: 1, value: 'Asian' }, { sno: 2, value: 'South-American' }];
+  Veteran = [{ sno: 1, value: 'Yes' }, { sno: 2, value: 'No'}];
+  NoticePeriod = [{ sno: 1, value: '30' }, { sno: 2, value: '90' }];
 }

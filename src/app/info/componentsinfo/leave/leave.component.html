@@ -51,7 +51,7 @@
   <table mat-table [dataSource]="dataSource" class="table">
     <ng-container matColumnDef="{{item}}" *ngFor="let item of displayedColumns">
       <th mat-header-cell *matHeaderCellDef>{{item}}</th>
-      <th class="answer" mat-cell *matCellDef="let element">{{element[item]}}</th>
+      <td class="answer" mat-cell *matCellDef="let element">{{element[item]}}</td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

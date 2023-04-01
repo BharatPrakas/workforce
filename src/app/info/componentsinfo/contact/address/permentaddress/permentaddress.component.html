@@ -1,1 +1,73 @@
-<p>permentaddress works!</p>
+<div class="body">
+  <div class="container">
+    <div class="checkbox">
+      <section class="example-section">
+        <mat-checkbox class="example-margin"></mat-checkbox>
+        <span>Same as Present Address</span>
+      </section>
+    </div>
+    <form fxLayout="column" [formGroup]="permanentAddress">
+    <!-- ----------adress line --------- -->
+      <div fxLayout="row" fxLayoutGap="50px" fxLayout.lt-md="column" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout='row'>
+          <mat-label fxFlex="40%">Address Line 1</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput formControlName="Addressline1">
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Addrss Line 2</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline">
+            <input matInput formControlName="Addressline2">
+          </mat-form-field>
+        </div>
+      </div>
+    <!-----------city / country----------->
+      <div fxLayout="row" fxLayoutGap="50px" fxLayout.lt-md="column" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout='row'>
+          <mat-label fxFlex="40%">City</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput formControlName="City">
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Country</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline">
+            <input matInput formControlName="Country">
+          </mat-form-field>
+        </div>
+      </div>
+  <!-----------state / zip code--------->
+      <div fxLayout="row" fxLayoutGap="50px" fxLayout.lt-md="column" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout='row'>
+          <mat-label fxFlex="40%">State</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+          <input matInput formControlName="State">
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Zip Code</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline">
+            <input matInput formControlName="Zipcode">
+          </mat-form-field>
+        </div>
+      </div>
+  <!-----------Phone number------------->
+      <div fxLayout="row" fxLayoutGap="50px" fxLayout.lt-md="column" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout='row'>
+          <mat-label fxFlex="40%">Mobile Number</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput formControlName="Mobilenumber">
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Home Phone Number</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline">
+            <input matInput formControlName="Phonenumber">
+          </mat-form-field>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+

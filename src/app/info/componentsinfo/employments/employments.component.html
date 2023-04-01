@@ -1,1 +1,24 @@
-<p>employments works!</p>
+<div class="container">
+  <!-- Disable Add btn -->
+  <div fxLayoutAlign="end center">
+    <a router-link="" mat-raised-button disabled>ADD</a>
+  </div>
+  <div class="table">
+    <table mat-table [dataSource]="datasource" matSort class="table-head ">
+      <!-- table content Column -->
+      <ng-container matColumnDef="{{content}}" *ngFor="let content of Displayedref">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> {{content}} </th>
+        <td mat-cell *matCellDef="let element"> {{element.content}} </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="Displayedref"></tr>
+      <tr mat-row *matRowDef="let row; columns: Displayedref;"></tr>
+    </table>
+    <!-- no recrds found  -->
+    <div class="norecord-div" fxLayoutAlign="center center">
+      <p>No Recrds Found!</p>
+    </div>
+    <!-- pagenator -->
+    <mat-paginator class="pagenator-cls" [pageSizeOptions]="[5, 10, 25, 50]"
+      aria-label="Select page of users"></mat-paginator>
+  </div>
+</div>

@@ -39,7 +39,7 @@ import { EmergencycontactComponent } from './componentsinfo/contact/address/emer
     CommonModule,
     MaterialModule,
     RouterModule,
-    MatNativeDateModule
+    MatNativeDateModule,
   ],
   exports: [
     InfoComponent,

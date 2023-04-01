@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogpasswordComponent } from 'src/app/shared/dialog/dialogpassword/dialogpassword.component';
 
 @Component({
   selector: 'app-info',
@@ -6,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent {
-Name="ARULMURUGAN M"
+Name="BHARATHVAJ PRAKASH";
+
+  // constructor( public dialog: MatDialog) { }
+  // openDialog() {
+  //   this.dialog.open(DialogpasswordComponent, {
+  //     data: {
+  //       msg:'hello'
+  //     },
+  //   });
+  // }
+
+
 }
+

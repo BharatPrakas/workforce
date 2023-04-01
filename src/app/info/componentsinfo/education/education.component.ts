@@ -18,13 +18,23 @@ const ELEMENT_DATA: PeriodicElement[] =[]
   styleUrls: ['./education.component.scss']
 })
 export class EducationComponent {
-
+  isDataAvailable = false;
+  isDataGeted = true;
+  ELEMENT_DATA = [];
+  
   @ViewChild(MatSort) sort!:MatSort;
   @ViewChild(MatPaginator) paginator!:MatPaginator
 
   Displayedref: string[] = ['Education', 'Institution', 'StartDate','EndDate','City','Action'];
   datasource = new MatTableDataSource(ELEMENT_DATA);
 
+  ngOnInit() {
+    console.log(this.ELEMENT_DATA.length);
+    if (this.ELEMENT_DATA.length > 0) {
+      this.isDataAvailable = true;
+      this.isDataGeted = !this.isDataGeted;
+    }
+  }
   ngAfterViewInit() {
     this.datasource.paginator = this.paginator;
     this.datasource.sort = this.sort;

@@ -19,12 +19,15 @@ const routes: Routes = [
   { path: '', redirectTo: '/app/dashboard', pathMatch: 'full' },
   {
     path: 'app', component: NavbarComponent, children: [
+
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'absence', component: AbsenceComponent },
+
       { path: 'dashboard', component: DashboardComponent },
       { path: 'absence', component: AbsenceComponent },
       { path: 'timesheet', component: TimesheetComponent },
       { path: 'info', redirectTo: '/app/info/general', pathMatch: 'full' },
-      {
-        path: 'info', component: InfoComponent, children: [
+      {   path: 'info', component: InfoComponent, children: [
           { path: 'general', component: GeneralComponent },
           { path: 'contact', component: ContactComponent },
           { path: 'education', component: EducationComponent },
@@ -36,9 +39,10 @@ const routes: Routes = [
           { path: 'documents', component: DocumentsComponent },
         ]
       }
-    ]
-  }
-];
+    ]}
+
+    ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

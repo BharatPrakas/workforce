@@ -1,1 +1,63 @@
-<p>leave works!</p>
+<div class="container" fxLayout="column">
+  <div class="title" fxLayout="row">
+    <i class="bi bi-calendar-check"></i>
+    <p class="leave-head" fxFlexOffset="10px">Leaves</p>
+  </div>
+  <div class="middle" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="15px">
+    <div class="permission">
+      <p class="leavetype">Permission</p>
+      <p class="available-leave"><i class="bi bi-calendar-check"></i> 0.00</p>
+      <p class="text-field">HOURS AVAILABLE</p>
+    </div>
+    <div class="personel">
+      <p class="leavetype">Personel</p>
+      <p class="available-leave"><i class="bi bi-calendar-check"></i> 0.00</p>
+      <p class="text-field">HOURS AVAILABLE</p>
+    </div>
+  </div>
+  <div class="leave-field" fxLayout="row" fxLayoutGap="10px">
+    <i class="bi bi-clock"></i>
+    <p>Upcoming Leaves</p>
+  </div>
+  <div *ngFor="let days of holiday" class="holiday" fxLayout="row" fxLayoutGap="10px">
+    <i class="bi bi-house-gear"></i>
+    <div class="interpole">
+      <p>{{days.day}} <br> {{days.theme}}</p>
+    </div>
+  </div><br><br>
+  <div class="history-field" fxLayout="row" fxLayoutGap="10px">
+    <i class="bi bi-clock-history"></i>
+    <p>History</p>
+  </div><br>
+  <div fxLayout="row" fxLayoutAlign="space-between">
+    <div fxLayout="row" fxLayoutGap="20px">
+      <mat-form-field appearance="outline">
+        <mat-select [formControl]="selected">
+          <mat-option [value]="item.value" *ngFor="let item of type">{{item.type}}</mat-option> </mat-select>
+      </mat-form-field>
+      <mat-form-field class="time-period" appearance="outline">
+        <mat-select [formControl]="selected">
+          <mat-option [value]="item.value" *ngFor="let item of time">{{item.type}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <mat-form-field appearance="outline">
+      <mat-select [formControl]="selected">
+        <mat-option [value]="item.value" *ngFor="let item of request">{{item.theme}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div><br>
+
+  <table mat-table [dataSource]="dataSource" class="table">
+    <ng-container matColumnDef="{{item}}" *ngFor="let item of displayedColumns">
+      <th mat-header-cell *matHeaderCellDef>{{item}}</th>
+      <td class="answer" mat-cell *matCellDef="let element">{{element[item]}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+  <mat-paginator showFirstLastButtons [length]="100" [pageSize]="10" [pageSizeOptions]="[1, 2, 5, 10]"
+    aria-label="Select page"></mat-paginator>
+</div>

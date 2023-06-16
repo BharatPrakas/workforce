@@ -11,11 +11,13 @@ import { MaterialModule } from './material/material.module';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { TimesheetModule } from './timesheet/timesheet.module';
 import { AuthModule } from './auth/auth.module';
+import { DialogpasswordComponent } from './shared/dialog/dialogpassword/dialogpassword.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    DialogpasswordComponent
   ],
   imports: [
     BrowserModule,

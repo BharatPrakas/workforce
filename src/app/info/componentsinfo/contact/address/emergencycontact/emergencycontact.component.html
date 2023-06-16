@@ -1,0 +1,66 @@
+<div class="body">
+  <div class="container">
+    <form fxLayout="column" [formGroup]="Emergencyaddress">
+    <!-- ----------adress line --------- -->
+      <div fxLayout="row" fxLayoutGap="50px" fxLayout.lt-md="column" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout='row'>
+          <mat-label fxFlex="40%">Contact Name</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput formControlName="Contactname">
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Relation Ship</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline">
+            <input matInput formControlName="Relationship">
+          </mat-form-field>
+        </div>
+      </div>
+    <!-----------city / country----------->
+      <div fxLayout="row" fxLayoutGap="50px" fxLayout.lt-md="column" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout='row'>
+          <mat-label fxFlex="40%">Contact Number</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput formControlName="Contactnumber">
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Email</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline">
+            <input matInput formControlName="Email">
+          </mat-form-field>
+        </div>
+      </div>
+  <!-----------state / zip code--------->
+      <div fxLayout="row" fxLayoutGap="50px" fxLayout.lt-md="column" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout='row'>
+          <mat-label fxFlex="40%">City</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+          <input matInput formControlName="City">
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Country</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline">
+            <input matInput formControlName="Country">
+          </mat-form-field>
+        </div>
+      </div>
+  <!-----------Phone number------------->
+      <div fxLayout="row" fxLayoutGap="50px" fxLayout.lt-md="column" fxLayoutGap.lt-md="0px">
+        <div class="child1" fxFlex="50%" fxLayout='row'>
+          <mat-label fxFlex="40%">State</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline" class="example-full-width">
+            <input matInput formControlName="State">
+          </mat-form-field>
+        </div>
+        <div class="child2" fxLayout="row" fxFlex="50%">
+          <mat-label fxFlex="40%">Zip Code</mat-label>
+          <mat-form-field fxFlex="60%" appearance="outline">
+            <input matInput formControlName="Zipcode">
+          </mat-form-field>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
